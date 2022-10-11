@@ -19,7 +19,7 @@
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="{{ route('admin.logout') }}">Logout</a></li>
                                     <li><a href="{{ route('register.profile') }}">Register</a></li>
-                                     <li><a href="{{ route('change.password') }}">Recover Password</a></li> 
+                                     <li><a href="{{ route('change.password') }}">Change Password</a></li> 
                                    <!-- <li><a href="auth-lock-screen.html">Lock Screen</a></li> -->
                                 </ul>
                             </li>

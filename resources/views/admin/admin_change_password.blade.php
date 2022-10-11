@@ -10,7 +10,7 @@
     <div class="card">
         <div class="card-body">
 
-            <h4 class="card-title">Change Password Page </h4><br><br>
+            <h4 class="card-title">Change Password  </h4><br><br>
             
 
             @if(count($errors))

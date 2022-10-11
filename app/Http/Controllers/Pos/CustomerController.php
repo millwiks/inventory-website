@@ -47,7 +47,7 @@ class CustomerController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'Customer Inserted Successfully',
+            'message' => 'Customer Added Successfully',
             'alert-type' => 'success'
         );
 
@@ -86,7 +86,7 @@ class CustomerController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'Customer Updated with Image Successfully',
+                'message' => ' Updated with Image Successfully',
                 'alert-type' => 'success'
             );
 
@@ -104,7 +104,7 @@ class CustomerController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'Customer Updated without Image Successfully',
+                'message' => ' Updated without Image Successfully',
                 'alert-type' => 'success'
             );
 
