@@ -712,14 +712,14 @@ select {
 .-mt-px {
   margin-top: -1px;
 }
-.mt-1 {
-  margin-top: 0.25rem;
-}
 .mr-auto {
   margin-right: auto;
 }
 .mt-3 {
   margin-top: 0.75rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
 }
 .mt-6 {
   margin-top: 1.5rem;
