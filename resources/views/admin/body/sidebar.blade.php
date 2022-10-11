@@ -45,17 +45,18 @@
                             </li>
 
 
-                            {{-- <li>
+                            <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="ri-ancient-gate-fill"></i>
-                                    <span> Store Products </span>
+                                    <span>Products/Category </span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="{{ route('web.items') }}">Products & Category</a></li>
+                                    <li><a href="{{ route('web.items') }}">All Products & Category</a></li>
+                                    <li><a href="{{ route('add.items') }}">Add Products & Category</a></li>
                 
                 
                                 </ul>
-                            </li> --}}
+                            </li> 
 
 
 

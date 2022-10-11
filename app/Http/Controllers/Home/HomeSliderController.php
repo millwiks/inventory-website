@@ -21,4 +21,9 @@ class HomeSliderController extends Controller
 
         return view('auth.login');
     } // End Method
+
+    public function Products()
+    {
+        return view('frontend.product');
+    } // end method 
 }

@@ -12,7 +12,7 @@ class ContactController extends Controller
     public function Contact()
     {
         return view('frontend.contact');
-    } // end mehthod 
+    } // end method 
 
     public function StoreMessage(Request $request)
     {
@@ -34,14 +34,14 @@ class ContactController extends Controller
         );
 
         return redirect()->back()->with($notification);
-    } // end mehthod 
+    } // end method 
 
     public function ContactMessage()
     {
 
         $contacts = Contact::latest()->get();
         return view('admin.contact.allcontact', compact('contacts'));
-    } // end mehtod 
+    } // end method 
 
 
     public function DeleteMessage($id)
@@ -55,5 +55,5 @@ class ContactController extends Controller
         );
 
         return redirect()->back()->with($notification);
-    } // end mehtod 
+    } // end method 
 }

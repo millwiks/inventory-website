@@ -14,7 +14,7 @@ use App\Http\Controllers\Pos\InvoiceController;
 use App\Http\Controllers\Pos\StockController;
 use App\Http\Controllers\Home\ContactController;
 use App\Http\Controllers\Home\HomeSliderController;
-use App\Http\Controllers\Home\WebProductsController;
+use App\Http\Controllers\Home\WebController;
 
 Route::get('/', function () {
     return view('frontend.index');
@@ -39,13 +39,19 @@ Route::controller(HomeSliderController::class)->group(function () {
     //my nav
     Route::get('/', 'HomeHtml')->name('home.html');
     Route::get('/login/html', 'LoginHtml')->name('login.html');
+    Route::get('/products', 'Products')->name('products.me');
 });
 
-// WebProducts all route
-Route::controller(WebProductsController::class)->group(function () {
+// WebController all route
+Route::controller(WebController::class)->group(function () {
 
     Route::get('/web/items', 'WebItems')->name('web.items');
+    Route::get('/add/items', 'AddItems')->name('add.items');
+    Route::post('/store/item', 'StoreItem')->name('store.item');
     //Route::get('/login/html', 'LoginHtml')->name('login.html');
+    Route::get('/edit/web/{id}', 'EditWeb')->name('edit.web');
+    Route::post('/update/web', 'UpdateWeb')->name('update.web');
+    Route::get('/delete/web/{id}', 'DeleteWeb')->name('delete.web');
 });
 
 Route::middleware('auth')->group(function () {

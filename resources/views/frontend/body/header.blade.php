@@ -22,12 +22,12 @@
                          <li class="nav-item active">
                             <a class="nav-link" href="{{ route('home.html')}}">Home</a>
                          </li>
-                         <li class="nav-item">
+                         {{-- <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
-                         </li>
+                         </li> --}}
                       
                          <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
+                            <a class="nav-link" href="{{ route('products.me')}}">Products</a>
                          </li>
                          
                          <li class="nav-item">
