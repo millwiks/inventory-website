@@ -45,6 +45,19 @@
                             </li>
 
 
+                            {{-- <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="ri-ancient-gate-fill"></i>
+                                    <span> Store Products </span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{ route('web.items') }}">Products & Category</a></li>
+                
+                
+                                </ul>
+                            </li> --}}
+
+
 
                             <li>
                                 <a href="{{ route('dashboard')}}" class="waves-effect">

@@ -33,7 +33,8 @@
                        <div class="col-md-4 margin_bottom1">
                           <div class="product_box">
                              <figure><img src="{{ asset('frontend/assets/images/product1.png')}}" alt="#"/></figure>
-                             <h3>Computer</h3>
+                             <h2>Category</h2>
+                             <h3>Product</h3>
                           </div>
                        </div>
                        <div class="col-md-4 margin_bottom1">
@@ -100,9 +101,9 @@
            <div class="row">
               <div class="col-md-6">
                  <div class="titlepage">
-                    <p>Every Computer and laptop</p>
+                    <p>Industrial|Home|Shop</p>
                     <h2>Up to 40% off !</h2>
-                    <a class="read_more" href="#">Shop Now</a>
+                    <a class="read_more" href="{{ route('contact.me')}}">Shop Now</a>
                  </div>
               </div>
               <div class="col-md-6">
@@ -142,7 +143,7 @@
                                       <div class="test_box">
                                          <i><img src="{{ asset('frontend/assets/images/cos.png')}}" alt="#"/></i>
                                          <h4>Sandy Miller</h4>
-                                         <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+                                         <p>“The staff was great. The receptionists were very helpful and answered all our questions. The room was clean and bright, and room service was always on time. Will be coming back!”</p>
                                       </div>
                                    </div>
                                 </div>
@@ -156,8 +157,8 @@
                                    <div class="col-md-9 offset-md-3">
                                       <div class="test_box">
                                          <i><img src="{{ asset('frontend/assets/images/cos.png')}}" alt="#"/></i>
-                                         <h4>Sandy Miller</h4>
-                                         <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+                                         <h4>James Mwema</h4>
+                                         <p>“I got a pair of  Diodes & Rectifiers from store  and I am very satisfied. They are high-quality and worth the money. The store also offered free shipping at that price so thats a plus!”</p>
                                       </div>
                                    </div>
                                 </div>
@@ -171,8 +172,8 @@
                                    <div class="col-md-9 offset-md-3">
                                       <div class="test_box">
                                          <i><img src="{{ asset('frontend/assets/images/cos.png')}}" alt="#"/></i>
-                                         <h4>Sandy Miller</h4>
-                                         <p>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+                                         <h4>Mwanaisha Juma</h4>
+                                         <p>“This app allows me to do problem from my smartphone where I want and when I want to. The interface is easy to navigate and I find everything I need quickly. I cant wait for feature!”</p>
                                       </div>
                                    </div>
                                 </div>

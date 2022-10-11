@@ -14,6 +14,7 @@ use App\Http\Controllers\Pos\InvoiceController;
 use App\Http\Controllers\Pos\StockController;
 use App\Http\Controllers\Home\ContactController;
 use App\Http\Controllers\Home\HomeSliderController;
+use App\Http\Controllers\Home\WebProductsController;
 
 Route::get('/', function () {
     return view('frontend.index');
@@ -38,6 +39,13 @@ Route::controller(HomeSliderController::class)->group(function () {
     //my nav
     Route::get('/', 'HomeHtml')->name('home.html');
     Route::get('/login/html', 'LoginHtml')->name('login.html');
+});
+
+// WebProducts all route
+Route::controller(WebProductsController::class)->group(function () {
+
+    Route::get('/web/items', 'WebItems')->name('web.items');
+    //Route::get('/login/html', 'LoginHtml')->name('login.html');
 });
 
 Route::middleware('auth')->group(function () {
