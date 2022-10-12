@@ -97,40 +97,40 @@
         </li>
 
 
-         <li>
-            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                <i class="ri-delete-back-fill"></i>
-                <span>Manage Units</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-                <li><a href="{{ route('unit.all') }}">UnitS</a></li>
-               
-            </ul>
-        </li>
-
-         <li>
+        
+        <li>
             <a href="javascript: void(0);" class="has-arrow waves-effect">
                 <i class="ri-apps-2-fill"></i>
                 <span>Manage Category</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="{{ route('category.all') }}"> CategoryS</a></li>
-               
+                
             </ul>
         </li>
-
-
-          <li>
+        
+        
+        <li>
             <a href="javascript: void(0);" class="has-arrow waves-effect">
                 <i class="ri-reddit-fill"></i>
                 <span>Manage Product</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
                 <li><a href="{{ route('product.all') }}">ProductS</a></li>
-               
+                
             </ul>
         </li>
-
+        
+        <li>
+           <a href="javascript: void(0);" class="has-arrow waves-effect">
+               <i class="ri-delete-back-fill"></i>
+               <span>Manage Units</span>
+           </a>
+           <ul class="sub-menu" aria-expanded="false">
+               <li><a href="{{ route('unit.all') }}">UnitS</a></li>
+              
+           </ul>
+       </li>
 
           <li>
             <a href="javascript: void(0);" class="has-arrow waves-effect">
