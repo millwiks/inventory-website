@@ -25,32 +25,34 @@ class WebController extends Controller
 
     public function StoreItem(Request $request)
     {
+        if (isset($request['product_image'])) {
 
-        $request->validate([
-            'product_name' => 'required',
-            'product_category' => 'required',
-            'product_image' => 'required',
+            $request->validate([
+                'product_name' => 'required',
+                'product_category' => 'required',
+                'product_image' => 'required',
 
-        ], [
+            ], [
 
-            'product_name.required' => 'Product Name  Required',
-            'product_category.required' => 'Product Category  Required',
-        ]);
+                'product_name.required' => 'Product Name  Required',
+                'product_category.required' => 'Product Category  Required',
+            ]);
 
-        $image = $request->file('product_image');
-        $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();  // 3434343443.jpg
+            $image = $request->file('product_image');
+            $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();  // 3434343443.jpg
 
-        Image::make($image)->resize(203, 160)->save('upload/products/' . $name_gen);
-        $save_url = 'upload/products/' . $name_gen;
+            Image::make($image)->resize(203, 160)->save('upload/products/' . $name_gen);
+            $save_url = 'upload/products/' . $name_gen;
 
-        web::insert([
-            'product_name' => $request->product_name,
-            'product_category' => $request->product_category,
-            //'portfolio_description' => $request->portfolio_description,
-            'product_image' => $save_url,
-            'created_at' => Carbon::now(),
+            web::insert([
+                'product_name' => $request->product_name,
+                'product_category' => $request->product_category,
+                //'portfolio_description' => $request->portfolio_description,
+                'product_image' => $save_url,
+                'created_at' => Carbon::now(),
 
-        ]);
+            ]);
+        }
         $notification = array(
             'message' => 'Added Successfully',
             'alert-type' => 'success'

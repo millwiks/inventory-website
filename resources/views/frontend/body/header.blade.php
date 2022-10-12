@@ -37,6 +37,9 @@
                          <li class="nav-item d_none">
                             <a class="nav-link" href="{{ route('login.html')}}">Login</a>
                          </li>
+                         <li class="nav-item d_none">
+                            <a class="nav-link" href="{{ route('register')}}">Get Started</a>
+                         </li>
                       </ul>
                    </div>
                 </nav>

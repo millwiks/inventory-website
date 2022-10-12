@@ -54,6 +54,7 @@
 
         <div class="form-group mb-3 row">
             <div class="col-12">
+                <i class="fa fa-key"></i>
                 <input class="form-control" id="password" name="password" type="password" required="" placeholder="Password">
             </div>
         </div>
