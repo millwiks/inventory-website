@@ -8,12 +8,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Supplier Wise Stock Report</h4>
+                                    <h4 class="mb-sm-0">Supplier  Stock Report</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);"> </a></li>
-                                            <li class="breadcrumb-item active">Supplier Wise Stock Report</li>
+                                            <li class="breadcrumb-item active">Supplier  Stock Report</li>
                                         </ol>
                                     </div>
 
@@ -32,7 +32,7 @@
             <div class="invoice-title">
                 
                 <h3>
-                    <img src="{{ asset('backend/assets/images/logo-sm.png') }}" alt="logo" height="24"/> Easy Shopping Mall
+                    <img src="{{ asset('backend/assets/images/logo-sm.png') }}" alt="logo" height="24"/> Kaeibo Electronics Store
                 </h3>
             </div>
             <hr>
@@ -40,9 +40,9 @@
             <div class="row">
                 <div class="col-6 mt-4">
                     <address>
-                        <strong>Easy Shopping Mall:</strong><br>
-                        Purana Palton Dhaka<br>
-                        support@easylearningbd.com
+                        <strong>Kaeibo Electronics Store:</strong><br>
+                        kaeibo<br>
+                        support@kaeibo.com
                     </address>
                 </div>
                 <div class="col-6 mt-4 text-end">
