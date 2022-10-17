@@ -19,7 +19,7 @@
 
             <div class="row mb-3">
                 <label for="example-text-input" class="col-sm-2 col-form-label">Product Category</label>
-                <div class="col-sm-10">
+                <div class="form-group col-sm-10">
                     <input name="product_category" class="form-control" type="text" id="example-text-input">
                     @error('product_category')
                     <span class="text-danger"> {{ $message }} </span>
@@ -31,7 +31,7 @@
 
               <div class="row mb-3">
                 <label for="example-text-input" class="col-sm-2 col-form-label">Product Name </label>
-                <div class="col-sm-10">
+                <div class="form-group col-sm-10">
                     <input name="product_name" class="form-control" type="text" id="example-text-input">
 
                     @error('product_name')
@@ -47,7 +47,7 @@
 
              <div class="row mb-3">
                 <label for="example-text-input" class="col-sm-2 col-form-label">Product Image </label>
-                <div class="col-sm-10">
+                <div class="form-group col-sm-10">
            <input name="product_image" class="form-control" type="file" id="image">
                 </div>
             </div>
@@ -78,41 +78,29 @@
 
 
 <script type="text/javascript">
-    
-    $(document).ready(function(){
-        $('#image').change(function(e){
-            var reader = new FileReader();
-            reader.onload = function(e){
-                $('#showImage').attr('src',e.target.result);
-            }
-            reader.readAsDataURL(e.target.files['0']);
-        });
-    });
-</script>
-<script type="text/javascript">
     $(document).ready(function (){
         $('#myForm').validate({
             rules: {
-                product_image: {
+                product_category: {
                     required : true,
                 }, 
-                 product_category: {
+                 product_name: {
                     required : true,
                 },
-                 product_name: {
+                 product_image: {
                     required : true,
                 },
        
             },
             messages :{
-                product_image: {
-                    required : 'Please Enter Your Product image',
-                },
                 product_category: {
                     required : 'Please Enter Product category',
                 },
                 product_name: {
                     required : 'Please Enter Product name',
+                },
+                product_image: {
+                    required : 'Please select product image ',
                 },
             
             },
@@ -131,5 +119,20 @@
     });
     
 </script>
+
+
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+        $('#image').change(function(e){
+            var reader = new FileReader();
+            reader.onload = function(e){
+                $('#showImage').attr('src',e.target.result);
+            }
+            reader.readAsDataURL(e.target.files['0']);
+        });
+    });
+</script>
+
 
 @endsection 
