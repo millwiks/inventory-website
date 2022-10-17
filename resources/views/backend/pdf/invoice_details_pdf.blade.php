@@ -159,7 +159,7 @@
                 <td class="thick-line"></td>
                 <td class="thick-line text-center">
                     <strong>Subtotal</strong></td>
-                <td class="thick-line text-end">${{ $total_sum }}</td>
+                <td class="thick-line text-end">ksh{{ $total_sum }}</td>
             </tr>
             <tr>
                 <td class="no-line"></td>
@@ -169,7 +169,7 @@
                 <td class="no-line"></td>
                 <td class="no-line text-center">
                     <strong>Discount Amount</strong></td>
-                <td class="no-line text-end">${{ $payment->discount_amount }}</td>
+                <td class="no-line text-end">ksh{{ $payment->discount_amount }}</td>
             </tr>
              <tr>
                 <td class="no-line"></td>
@@ -179,7 +179,7 @@
                 <td class="no-line"></td>
                 <td class="no-line text-center">
                     <strong>Paid Amount</strong></td>
-                <td class="no-line text-end">${{ $payment->paid_amount }}</td>
+                <td class="no-line text-end">ksh{{ $payment->paid_amount }}</td>
             </tr>
 
              <tr>
@@ -190,7 +190,7 @@
                 <td class="no-line"></td>
                 <td class="no-line text-center">
                     <strong>Due Amount</strong></td>
-                <td class="no-line text-end">${{ $payment->due_amount }}</td>
+                <td class="no-line text-end">ksh{{ $payment->due_amount }}</td>
             </tr>
             <tr>
                 <td class="no-line"></td>
@@ -200,7 +200,7 @@
                 <td class="no-line"></td>
                 <td class="no-line text-center">
                     <strong>Grand Amount</strong></td>
-                <td class="no-line text-end"><h4 class="m-0">${{ $payment->total_amount }}</h4></td>
+                <td class="no-line text-end"><h4 class="m-0">ksh{{ $payment->total_amount }}</h4></td>
             </tr>
 
 
