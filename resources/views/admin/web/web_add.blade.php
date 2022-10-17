@@ -89,5 +89,47 @@
         });
     });
 </script>
+<script type="text/javascript">
+    $(document).ready(function (){
+        $('#myForm').validate({
+            rules: {
+                product_image: {
+                    required : true,
+                }, 
+                 product_category: {
+                    required : true,
+                },
+                 product_name: {
+                    required : true,
+                },
+       
+            },
+            messages :{
+                product_image: {
+                    required : 'Please Enter Your Product image',
+                },
+                product_category: {
+                    required : 'Please Enter Product category',
+                },
+                product_name: {
+                    required : 'Please Enter Product name',
+                },
+            
+            },
+            errorElement : 'span', 
+            errorPlacement: function (error,element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+            },
+            highlight : function(element, errorClass, validClass){
+                $(element).addClass('is-invalid');
+            },
+            unhighlight : function(element, errorClass, validClass){
+                $(element).removeClass('is-invalid');
+            },
+        });
+    });
+    
+</script>
 
 @endsection 

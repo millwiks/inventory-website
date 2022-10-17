@@ -52,7 +52,7 @@
             },
             messages :{
                 name: {
-                    required : 'Please Enter Your Name',
+                    required : 'Please Enter a Name',
                 },
                  
             },
